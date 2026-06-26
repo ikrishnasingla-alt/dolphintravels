@@ -152,3 +152,78 @@ console.log(
 console.log(
 "Website developed for Dolphin Travels."
 );
+
+const rates = {
+
+"Delhi Airport":[
+["Sedan","₹2500"],
+["Ertiga","₹3500"],
+["Kia Carens","₹4000"],
+["Crysta","₹5500"]
+],
+
+"Chandigarh":[
+["Sedan","₹1700"],
+["Ertiga","₹2500"],
+["Innova","₹3500"]
+],
+
+"Haridwar":[
+["Sedan","₹3500"],
+["Ertiga","₹4500"],
+["Innova","₹6000"]
+],
+
+"Shimla":[
+["Sedan","₹4500"],
+["Ertiga","₹6000"],
+["Crysta","₹7500"]
+],
+
+"Manali":[
+["Sedan","₹6999"],
+["Ertiga","₹7999"],
+["Crysta","₹8999"]
+],
+
+"Jaipur":[
+["Sedan","₹4499"],
+["Ertiga","₹4999"],
+["Crysta","₹5999"]
+]
+
+};
+
+function showRates(route){
+
+document.getElementById("routeTitle").innerHTML=route;
+
+let html="";
+
+rates[route].forEach(function(car){
+
+html += "<p><b>"+car[0]+"</b> : "+car[1]+"</p>";
+
+});
+
+document.getElementById("rateList").innerHTML=html;
+
+document.getElementById("rateModal").style.display="block";
+
+}
+
+function closeModal(){
+
+document.getElementById("rateModal").style.display="none";
+
+}
+
+window.onclick=function(e){
+
+if(e.target==document.getElementById("rateModal")){
+
+closeModal();
+
+}
+
+}
