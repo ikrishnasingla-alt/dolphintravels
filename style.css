@@ -103,6 +103,8 @@ header{
     align-items: center;
     text-align: center;
     color: #fff;
+    width: 100%;
+    margin: 0;
     padding: 20px;
 }
 .hero h1{
