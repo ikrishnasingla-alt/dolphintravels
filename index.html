@@ -195,18 +195,34 @@ Popular Routes
 
 <div class="route-list">
 
-<div>Kurukshetra → Delhi Airport</div>
+<div class="route-card" onclick="showRates('Delhi Airport')">Kurukshetra → Delhi Airport</div>
 
-<div>Kurukshetra → Chandigarh</div>
+<div class="route-card" onclick="showRates('Chandigarh')">Kurukshetra → Chandigarh</div>
 
-<div>Kurukshetra → Haridwar</div>
+<div class="route-card" onclick="showRates('Haridwar')">Kurukshetra → Haridwar</div>
 
-<div>Kurukshetra → Shimla</div>
+<div class="route-card" onclick="showRates('Shimla')">Kurukshetra → Shimla</div>
 
-<div>Kurukshetra → Manali</div>
+<div class="route-card" onclick="showRates('Manali')">Kurukshetra → Manali</div>
 
-<div>Kurukshetra → Jaipur</div>
+<div class="route-card" onclick="showRates('Jaipur')">Kurukshetra → Jaipur</div>
 
+</div>
+
+<div id="rateModal" class="modal">
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">&times;</span>
+
+<h2 id="routeTitle"></h2>
+
+<div id="rateList"></div>
+
+<a href="tel:+919253666555" class="btn call">📞 Call Now</a>
+
+<a href="https://wa.me/919253666555" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
+
+</div>
 </div>
 
 </section>
