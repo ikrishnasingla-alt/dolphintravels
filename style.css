@@ -90,18 +90,21 @@ header{
 /* Hero */
 
 .hero{
-    background-size: contain;
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url(hero.png) center/cover no-repeat;
+    background-image:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+        url("hero.png");
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:#fff;
-    padding:20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* or cover */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
 }
-
 .hero h1{
     font-size:58px;
     margin-bottom:20px;
