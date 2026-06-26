@@ -23,7 +23,7 @@ body{
 /* Navbar */
 
 header{
-    position: fixed;
+    position: static;
     width:100%;
     top:0;
     left:0;
@@ -35,7 +35,7 @@ header{
 .navbar{
     max-width:1200px;
     margin:auto;
-    padding:18px 25px;
+    padding:10px 15px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -48,8 +48,8 @@ header{
 }
 
 .logo img{
-    width:55px;
-    height:55px;
+    width:45px;
+    height:45px;
     border-radius:50%;
 }
 
