@@ -92,7 +92,7 @@ header{
 .hero{
     background-image:
         linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-        url("hero.png");
+        url("hero.jpg.jpeg");
 
     background-position: center;
     background-repeat: no-repeat;
